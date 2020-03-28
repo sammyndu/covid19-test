@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105158148-2"></script>
+    <script src="./googleGtag.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    <link href="./images/virus.png" rel="icon" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        COVID-19 SELF TEST
+    </title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <form method="post" action="./" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="8TJR72Hp/1IlnR/FxAILCEf66nFFrC+tP4P/NkT/upg73y122C/Q5C68WsCPI/wOz/cgl7z6bmxL2Xoe1y3wjM0HFOzgb7Y0kziaI/cOqjo=" />
+        </div>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                value="9Obnln0/sD7C9zjqA8WohiD7kK4JGZOBnsOGmi1G/o5cAbFQ03loTsgEDTrISSppA3IdC3dh43MtM8FueGA5K8IN39SZB7elqpTUBZ8veyxqrn8E29Run/SEDlSM9oII" />
+        </div>
+        <div class="container-md ">
+
+            <div class="d-flex justify-content-center  mt-2">
+
+                <div class="row">
+                    <div class="col-md-5 text-center" style="padding-right: 0;"><img  src="./images/virus.png" class="img-fluid w-25 float-md-right lefter " />
+                    </div>
+                    <div class="col-md-4" style="padding-left: 0;">
+                        <h1 class="text-center">COVID-19 SELF TEST</h1>
+                    </div>
+                </div>
+            </div>
+
+
+            <span id="clicks" class="invisible"></span>
+            <span id=""></span>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs " id="myTab" role="tablist" style="display:none">
+                <li class="nav-item  invisible">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                        aria-controls="home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item invisible">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                        aria-controls="profile" aria-selected="false">Profile</a>
+                </li>
+                <li class="nav-item invisible">
+                    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab"
+                        aria-controls="messages" aria-selected="false">Messages</a>
+                </li>
+                <li class="nav-item invisible">
+                    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab"
+                        aria-controls="settings" aria-selected="false">Settings</a>
+                </li>
+                <li class="nav-item invisible">
+                    <a class="nav-link" id="bobypains-tab" data-toggle="tab" href="#bobypains" role="tab"
+                        aria-controls="bobypains" aria-selected="false">bobypains-tab</a>
+                </li>
+
+                <li class="nav-item invisible">
+                    <a class="nav-link" id="headache-tab" data-toggle="tab" href="#headache" role="tab"
+                        aria-controls="headache" aria-selected="false">headache-tab</a>
+                </li>
+                <li class="nav-item invisible">
+                    <a class="nav-link" id="fever-tab" data-toggle="tab" href="#fever" role="tab" aria-controls="fever"
+                        aria-selected="false">bfever-tab</a>
+                </li>
+                <li class="nav-item invisible">
+                    <a class="nav-link" id="breathing-tab" data-toggle="tab" href="#breathing" role="tab"
+                        aria-controls="breathing" aria-selected="false">breathing-tab</a>
+                </li>
+                <li class="nav-item invisible">
+                    <a class="nav-link" id="fatigue-tab" data-toggle="tab" href="#fatigue" role="tab"
+                        aria-controls="fatigue" aria-selected="false">fatigue-tab</a>
+                </li>
+                <li class="nav-item invisible">
+                    <a class="nav-link" id="traveled-tab" data-toggle="tab" href="#traveled" role="tab"
+                        aria-controls="traveled" aria-selected="false">traveled-tab</a>
+                </li>
+                <li class="nav-item invisible">
+                    <a class="nav-link" id="infected-tab" data-toggle="tab" href="#infected" role="tab"
+                        aria-controls="infected" aria-selected="false">infected-tab</a>
+                </li>
+                <li class="nav-item invisible">
+                    <a class="nav-link" id="sick-tab" data-toggle="tab" href="#sick" role="tab" aria-controls="sick"
+                        aria-selected="false">sick-tab</a>
+                </li>
+                <li class="nav-item invisible">
+                    <a class="nav-link" id="diagnosis-tab" data-toggle="tab" href="#diagnosis" role="tab"
+                        aria-controls="diagnosis" aria-selected="false">diagnosis-tab</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" data-aos="fade up" data-aos-delay="100">
+                    <div class="d-flex justify-content-center m-3">
+                        <div class=" card shadow shadow-sm">
+                            <div class="card-body" >
+
+                                <center><img src="images/sneeze.png" class=" img-fluid w-25" /></center>
+                                <h2 class="mb-5 text-center">Do you have cough?</h2>
+                                <div class="input-group mb-3">
+
+                                    <input type="button" value="YES"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="onClick()" />
+                                </div>
+                                <div class="input-group mb-3">
+
+                                    <input type="button" value="NO"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="noClick()" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="button" value="next" class="nexttab btn btn-danger invisible" />
+                    <input type="button" value="Prev" class="prevtab btn btn-outline-primary invisible" />
+                </div>
+                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="d-flex justify-content-center m-3">
+                        <div class=" card shadow shadow-sm">
+                            <div class="card-body">
+
+                                <center><img src="images/cold2.png" class=" img-fluid w-25" /></center>
+                                <h2 class="mb-5 text-center">Do you have a cold?</h2>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="YES"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="onClick()" />
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="NO"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="noClick()" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <input type="button" value="<< Prev" class="prevtab btn btn-outline-primary invisible" />
+                    <input type="button" value="Next >>" class="nexttab btn btn-danger invisible" />
+
+                </div>
+                <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                    <div class="d-flex justify-content-center m-3">
+                        <div class=" card shadow shadow-sm">
+                            <div class="card-body">
+
+                                <center><img src="images/diarrhea.png" class=" img-fluid w-25" /></center>
+                                <h2 class="mb-4 text-center">Are you having <br />Diarrhea?</h2>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="YES"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="onClick()" />
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="NO"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="noClick()" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="button" value="<< Prev" class="prevtab btn btn-outline-primary invisible" />
+                    <input type="button" value="Next >>" class="nexttab btn btn-danger invisible" />
+
+                </div>
+                <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                    <div class="d-flex justify-content-center m-3">
+                        <div class=" card shadow shadow-sm">
+                            <div class="card-body">
+
+                                <center><img src="images/sore-throat.png" class=" img-fluid w-25" /></center>
+                                <h2 class="mb-4 text-center">Are you having <br />sorethroat?</h2>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="YES"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="onClick()" />
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="NO"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="noClick()" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="button" value="<< Prev" class="prevtab btn btn-outline-primary invisible" />
+                    <input type="button" value="Next >>" class="nexttab btn btn-danger invisible" />
+                </div>
+                <div class="tab-pane" id="bobypains" role="tabpanel" aria-labelledby="bobypains-tab">
+                    <div class="d-flex justify-content-center m-3">
+                        <div class=" card shadow shadow-sm">
+                            <div class="card-body">
+
+                                <center><img src="images/bodypain.png" class=" img-fluid w-25" /></center>
+                                <h2 class="mb-4 text-center">Are you having body <br />aches?</h2>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="YES"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="onClick()" />
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="NO"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="noClick()" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="button" value="<< Prev" class="prevtab btn btn-outline-primary invisible" />
+                    <input type="button" value="Next >>" class="nexttab btn btn-danger invisible" />
+                </div>
+                <div class="tab-pane" id="headache" role="tabpanel" aria-labelledby="headache-tab">
+                    <div class="d-flex justify-content-center m-3">
+                        <div class=" card shadow shadow-sm">
+                            <div class="card-body">
+
+                                <center><img src="images/headache.png" class=" img-fluid w-25" /></center>
+                                <h2 class="mb-4 text-center">Are you having a <br />headache?</h2>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="YES"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="onClick()" />
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="NO"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="noClick()" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="button" value="<< Prev" class="prevtab btn btn-outline-primary invisible" />
+                    <input type="button" value="Next >>" class="nexttab btn btn-danger invisible" />
+                </div>
+                <div class="tab-pane" id="fever" role="tabpanel" aria-labelledby="fever-tab">
+                    <div class="d-flex justify-content-center m-3">
+                        <div class=" card shadow shadow-sm">
+                            <div class="card-body">
+
+                                <center><img src="images/fever.png" class=" img-fluid w-25" /></center>
+                                <h2 class="mb-4 text-center">Do you have fever<br />(Temperature 37.8°C <br />and
+                                    above)?</h2>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="YES"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="onClick()" />
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="NO"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="noClick()" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="button" value="<< Prev" class="prevtab btn btn-outline-primary invisible" />
+                    <input type="button" value="Next >>" class="nexttab btn btn-danger invisible" />
+                </div>
+                <div class="tab-pane" id="breathing" role="tabpanel" aria-labelledby="breathing-tab">
+                    <div class="d-flex justify-content-center m-3">
+                        <div class=" card shadow shadow-sm">
+                            <div class="card-body">
+
+                                <center><img src="images/breath.png" class=" img-fluid w-25" /></center>
+                                <h2 class="mb-4 text-center">Are you having difficulty<br /> breathing?</h2>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="YES"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="onClickdouble()" />
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="NO"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="noClick()" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="button" value="<< Prev" class="prevtab btn btn-outline-primary invisible" />
+                    <input type="button" value="Next >>" class="nexttab btn btn-danger invisible" />
+                </div>
+                <div class="tab-pane" id="fatigue" role="tabpanel" aria-labelledby="fatigue-tab">
+                    <div class="d-flex justify-content-center m-3">
+                        <div class=" card shadow shadow-sm">
+                            <div class="card-body">
+
+                                <center><img src="images/fatigue.png" class=" img-fluid w-25" /></center>
+                                <h2 class="mb-4 text-center">Are you experiencing <br />fatigue?</h2>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="YES"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="onClickdouble()" />
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="NO"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="noClick()" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="button" value="<< Prev" class="prevtab btn btn-outline-primary invisible" />
+                    <input type="button" value="Next >>" class="nexttab btn btn-danger invisible" />
+                </div>
+                <div class="tab-pane" id="traveled" role="tabpanel" aria-labelledby="traveled-tab">
+                    <div class="d-flex justify-content-center m-3">
+                        <div class=" card shadow shadow-sm">
+                            <div class="card-body">
+
+                                <center><img src="images/travel.png" class=" img-fluid w-25" /></center>
+                                <h2 class="mb-4 text-center">Have you traveled <br />recently during the past <br />14
+                                    days?</h2>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="YES"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="onClicktriple()" />
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="NO"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="noClick()" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="button" value="<< Prev" class="prevtab btn btn-outline-primary invisible" />
+                    <input type="button" value="Next >>" class="nexttab btn btn-danger invisible" />
+                </div>
+                <div class="tab-pane" id="infected" role="tabpanel" aria-labelledby="infected-tab">
+                    <div class="d-flex justify-content-center m-3">
+                        <div class=" card shadow shadow-sm">
+                            <div class="card-body">
+
+                                <center><img src="images/history_infected.png" class=" img-fluid w-25" /></center>
+                                <h2 class="mb-4 text-center">Do you have a travel <br />history to a COVID-19<br />
+                                    INFECTED AREA?</h2>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="YES"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="onClicktriple()" />
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="NO"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="noClick()" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="button" value="<< Prev" class="prevtab btn btn-outline-primary invisible" />
+                    <input type="button" value="Next >>" class="nexttab btn btn-danger invisible" />
+                </div>
+                <div class="tab-pane" id="sick" role="tabpanel" aria-labelledby="sick-tab">
+                    <div class="d-flex justify-content-center m-3">
+                        <div class=" card shadow shadow-sm">
+                            <div class="card-body">
+
+                                <center><img src="images/doctor.png" class=" img-fluid" /></center>
+                                <h2 class="mb-4 text-center">Do you have direct contact<br /> with or are you taking
+                                    care of a<br /> positive COVID-19 PATIENT?</h2>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="YES" data-value="Last"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="onClicktriple()" />
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="NO"
+                                        class="nexttab btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick="noClick()" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="button" value="<< Prev" class="prevtab btn btn-outline-primary invisible" />
+                    <input type="button" value="Next >>" class="nexttab btn btn-danger invisible" />
+                </div>
+                <div class="tab-pane" id="diagnosis" role="tabpanel" aria-labelledby="diagnosis-tab">
+                    <div class="d-flex justify-content-center m-3">
+                        <div class=" card shadow shadow-sm">
+                            <div class="card-body">
+
+                                <center><img src="images/doctor_answer.png" class=" img-fluid w-25" /></center>
+                                <hr style="border-top:4px solid #000000; margin-bottom:0px;" />
+                                <h5 class="mb-1  text-left">RESULT:</h5>
+                                <h6 class="mb-1  text-left">Your risk of <br />having COVID-19 is</h6>
+                                <h2 id="holder"></h2>
+                                <p id="resulthold" class="  font-weight-bold" style="color:#000000;"></p>
+                                <div class="input-group mb-3">
+                                    <input type="button" value="" class="nexttab invisible" />
+                                    <input type="button" name="Button1" value="RESTART TEST" id="Button1"
+                                        class=" btn btn-outline-primary btn-lg form-control form-control-lg"
+                                        onclick=location.href="/" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="button" value="<< Prev" class="prevtab btn btn-outline-primary invisible" />
+                    <input type="button" value="Next >>" class="nexttab btn btn-danger invisible" />
+                </div>
+                <div class="d-flex justify-content-center  mb-2">
+                    <span class="text-center">Powered by<br />
+                        <a href="https://www.facebook.com/FourthmanConcepts/"> <img src="images/tingo_logo.PNG"
+                                class="img-fluid w-25" /></a></span>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="main.js">
+
+        </script>
+    </form>
+</body>
+
+</html>
